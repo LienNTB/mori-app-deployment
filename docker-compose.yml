@@ -11,7 +11,7 @@ services:
       EMAIL_PASS: rjtshtoqxlfvloip
       JWT_SECRET: jwtMoriBook
 
-      AZURE_STORAGE_CONNECTION_STRING: https;AccountName=moristorage123;AccountKey=aC4C/1nK1LktBTWifiMLF6dY7v8rxxbNcf+DQcQgDme+J1pZ+2Ojw5xAt6gUnC6krivcsHLN+EwS+AStSMMNgQ==;EndpointSuffix=core.windows.net
+      AZURE_STORAGE_CONNECTION_STRING: DefaultEndpointsProtocol=https;AccountName=moristorage123;AccountKey=aC4C/1nK1LktBTWifiMLF6dY7v8rxxbNcf+DQcQgDme+J1pZ+2Ojw5xAt6gUnC6krivcsHLN+EwS+AStSMMNgQ==;EndpointSuffix=core.windows.net
       AZURE_STORAGE_CONTAINER_NAME_IMG: bookimg
       AZURE_STORAGE_CONTAINER_NAME_PDF: bookpdf
       AZURE_STORAGE_CONTAINER_NAME_AVATAR: accountimg
