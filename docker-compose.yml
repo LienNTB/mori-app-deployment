@@ -17,3 +17,9 @@ services:
       AZURE_STORAGE_CONTAINER_NAME_AVATAR: accountimg
 
       MONGODB_URL: mongodb+srv://moribook:Mori123456@cluster0.xdqbzc5.mongodb.net/moridb
+
+  frontend:
+    image: nguyenlien/mori-frontend
+    environment:
+      GOOGLE_CLIENT_ID: 581005886543-016nfq2fq93sjroi50n8puejk9n1r9h3.apps.googleusercontent.com
+      BACKEND_URL: /
