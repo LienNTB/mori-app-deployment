@@ -1,9 +1,9 @@
-versions: "3.7"
+version: "3.7"
 services:
   backend:
     image: nguyenlien/mori-backend
     environment:
-      ACCESS_TOKEN_SECRET: Access_Token_Secret_#$%_ExpressJS_Authentication
+      ACCESS_TOKEN_SECRET: Access_Token_Secret_Mori
       ACCESS_TOKEN_LIFE: 10m
 
       EMAIL_SERVICE: Gmail
