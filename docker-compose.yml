@@ -1,4 +1,4 @@
-verions: "3.7"
+versions: "3.7"
 services:
 backend:
     image: nguyenlien/mori-backend
