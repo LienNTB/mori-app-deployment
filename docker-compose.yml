@@ -1,6 +1,6 @@
 versions: "3.7"
 services:
-backend:
+  backend:
     image: nguyenlien/mori-backend
     environment:
       - ACCESS_TOKEN_SECRET=Access_Token_Secret_#$%_ExpressJS_Authentication
