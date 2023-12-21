@@ -23,7 +23,7 @@ services:
     image: nguyenlien/mori-frontend
     environment:
       GOOGLE_CLIENT_ID: 581005886543-016nfq2fq93sjroi50n8puejk9n1r9h3.apps.googleusercontent.com
-      BACKEND_URL: 'https://legendary-funicular-9qp6pxqgx4p2pvj6-80.app.github.dev'
+      BACKEND_URL_DEV: https://mori-backend.onrender.com
   
   apt-gateway:
     image: nginx:1.18.0
