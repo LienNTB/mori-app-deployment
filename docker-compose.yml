@@ -24,12 +24,21 @@ services:
     environment:
       GOOGLE_CLIENT_ID: 581005886543-016nfq2fq93sjroi50n8puejk9n1r9h3.apps.googleusercontent.com
       BACKEND_URL_DEV: https://mori-backend.onrender.com
-  
+
+  admin:
+    image: nguyenlien/mori-admin
+    environment:
+      REACT_APP_BACKEND_URL: https://mori-backend.onrender.com
+      REACT_APP_FRONTEND_URL: http://3.25.169.33
+      REACT_APP_ADMIN_URL: http://localhost:3001
+      PORT: 3001
+
   apt-gateway:
     image: nginx:1.18.0
     depends_on:
       - backend
       - frontend
+      - admin
     ports:
       - 80:80
     volumes:
