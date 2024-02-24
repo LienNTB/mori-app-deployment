@@ -23,15 +23,31 @@ services:
     image: nguyenlien/mori-frontend
     environment:
       GOOGLE_CLIENT_ID: 581005886543-016nfq2fq93sjroi50n8puejk9n1r9h3.apps.googleusercontent.com
-      BACKEND_URL_DEV: https://mori-backend.onrender.com
+      BACKEND_URL_DEV: http://103.130.211.150:10041
+      ADMIN_URL_DEV: http://103.130.211.150:10041
+      FRONTEND_URL_DEV: http://103.130.211.150:10041
 
   admin:
     image: nguyenlien/mori-admin
     environment:
-      REACT_APP_BACKEND_URL: https://mori-backend.onrender.com
-      REACT_APP_FRONTEND_URL: http://3.25.169.33
-      REACT_APP_ADMIN_URL: http://localhost:3001
-      PORT: 3001
+      ACCESS_TOKEN_SECRET: Access_Token_Secret_Mori
+      ACCESS_TOKEN_LIFE: 10m
+
+      #EMAIL VERIFICATION
+      EMAIL_SERVICE: Gmail
+      EMAIL_USER: bischlien@gmail.com
+      EMAIL_PASS: rjtshtoqxlfvloip
+      JWT_SECRET: jwtMoriBook
+
+      #AZURE STORAGE
+      AZURE_STORAGE_CONNECTION_STRING: DefaultEndpointsProtocol=https;AccountName=moristorage123;AccountKey=aC4C/1nK1LktBTWifiMLF6dY7v8rxxbNcf+DQcQgDme+J1pZ+2Ojw5xAt6gUnC6krivcsHLN+EwS+AStSMMNgQ==;EndpointSuffix=core.windows.net
+      AZURE_STORAGE_CONTAINER_NAME_IMG: bookimg
+      AZURE_STORAGE_CONTAINER_NAME_PDF: bookpdf
+      AZURE_STORAGE_CONTAINER_NAME_AUDIO: bookaudio
+      AZURE_STORAGE_CONTAINER_NAME_EPUB: bookepub
+      AZURE_STORAGE_CONTAINER_NAME_AVATAR: accountimg
+
+      MONGODB_URL: mongodb+srv://moribook:Mori123456@cluster0.xdqbzc5.mongodb.net/moridb
 
   apt-gateway:
     image: nginx:1.18.0
