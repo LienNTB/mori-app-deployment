@@ -57,6 +57,7 @@ services:
       - frontend
       - admin
     ports:
+      - 10046:80
       - 80:80
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
