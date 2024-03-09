@@ -31,6 +31,8 @@ services:
 
   admin:
     image: nguyenlien/mori-admin
+    ports:
+      - "10047:80"
     environment:
       ACCESS_TOKEN_SECRET: Access_Token_Secret_Mori
       ACCESS_TOKEN_LIFE: 10m
