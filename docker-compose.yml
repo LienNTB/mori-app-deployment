@@ -61,5 +61,3 @@ services:
 
 networks:
   backend_network:
-volumes:
-  data-volume:
