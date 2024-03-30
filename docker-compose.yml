@@ -4,8 +4,6 @@ services:
     image: nguyenlien/mori-backend
     networks:
       - backend_network
-    volumes:
-      - mori-data:/app/data
     environment:
       ACCESS_TOKEN_SECRET: Access_Token_Secret_Mori
       ACCESS_TOKEN_LIFE: 10m
@@ -38,7 +36,7 @@ services:
       ALLOW_ORIGIN_TOKEN: huonglienhcmutefit123
 
   admin:
-    image: qhuong1008/mori-admin
+    image: nguyenlien/mori-admin
     networks:
       - backend_network
     environment:
