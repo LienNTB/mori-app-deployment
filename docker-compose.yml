@@ -39,8 +39,6 @@ services:
       ADMIN_URL_DEV: https://ebook.workon.space
       FRONTEND_URL_DEV: https://ebook.workon.space
       ALLOW_ORIGIN_TOKEN: huonglienhcmutefit123
-    ports:
-      - "80:80"
 
   admin:
     image: nguyenlien/mori-admin
@@ -52,8 +50,6 @@ services:
       REACT_APP_ADMIN_URL: https://ebook.workon.space
       REACT_APP_ALLOW_ORIGIN_TOKEN: huonglienhcmutefit123
       REACT_APP_JWT_SECRET: hcmutefitmoriauth
-      ports:
-      - "81:80"
     depends_on:
       - backend
 
